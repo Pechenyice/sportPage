@@ -1,0 +1,186 @@
+#motivationSlider {
+    background-color: #ededed;
+    width: 100%;
+    height: 600px;
+    padding-top: 30px;
+    position: relative;
+}
+
+#motivationSlider .headline{
+    margin-bottom: 0;
+}
+
+#outsideBorderSlider {
+    position: absolute;
+    width: 50%;
+    height: 80.5%;
+    top: 14.75%;
+    left: 25%;
+    background-color: #FF9E6A;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    transition: 1s;
+    opacity: 0;
+}
+
+#insideBorderSlider {
+    position: absolute;
+    width: 49%;
+    height: 78%;
+    top: 16%;
+    left: 25.5%;
+    background-color: #fff;
+    transition: 1s;
+    opacity: 0;
+}
+
+#resizeArea {
+    position: absolute;
+    width: 48%;
+    height: 75.5%;
+    top: 17.25%;
+    left: 26%;
+    background-color: rgb(255, 255, 255);
+    transition: 1s;
+    opacity: 0;
+}
+
+.sliderHeadlines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.5em;
+    color: #464646;
+    width: 10%;
+    height: 10%;
+    transition: 1s;
+    opacity: 0;
+}
+
+#motivationSlider h1:nth-child(5) {
+    left: 5%;
+    top: 42.625%;
+}
+
+#motivationSlider h1:nth-child(6) {
+    right: 5%;
+    top: 42.625%;
+}
+
+#resizeAreaMain {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: w-resize;
+}
+
+#resizeAreaAction {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    max-width: 98%;
+    min-width: 2%;
+    background: url("../img/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .1s;
+    cursor: w-resize;
+}
+
+#resizeArea:hover #resizeAreaCursor{
+    opacity: 1;
+}
+
+#resizeAreaCursor {
+    font-size: 1.3em;
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: #464646;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s;
+    -webkit-user-select: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#resizeAreaCursor:hover {
+    color: #FF9E6A;
+    transition: .1s;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    #motivationSlider  .headline {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    #motivationSlider h1:nth-child(5) {
+        left: 0;
+    }
+    
+    #motivationSlider h1:nth-child(6) {
+        right: 0;
+    }
+
+    #outsideBorderSlider {
+        width: 70%;
+        left: 15%;
+    }
+
+    #insideBorderSlider {
+        width: 68%;
+        left: 16%;
+    }
+
+    #resizeArea {
+        width: 66%;
+        left: 17%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #motivationSlider {
+        height: 400px;
+    }
+
+    #motivationSlider h1:nth-child(5) {
+        display: none;
+    }
+    
+    #motivationSlider h1:nth-child(6) {
+        display: none;
+    }
+
+    #outsideBorderSlider {
+        width: 90%;
+        left: 5%;
+    }
+
+    #insideBorderSlider {
+        width: 87%;
+        left: 6.5%;
+    }
+
+    #resizeArea {
+        width: 84%;
+        left: 8%;
+    }
+}

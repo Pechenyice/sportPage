@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/regCon.css">
+    
+    <title>Регистрация</title>
+</head>
+<body>
+    <div id="dataBase">
+
+        <div id="userData">
+          <form action="/registr" method="post" name="registration">
+            <div id="userEmail" class="userDataInfo">
+              <h3>Email</h3>
+              <input name="login" value="morkovka1991@mail.com" id="userEmailInput" class="userDataInputs"/>
+            </div>
+        
+            <div id="userPassword" class="userDataInfo">
+              <h3>Password</h3>
+              <input name="password" value="*********" id="userPasswordInput" class="userDataInputs"/>
+            </div>
+        
+            <div id="userName" class="userDataInfo">
+              <h3>Username</h3>
+              <input name="name" value="NarutoXX" id="userNameInput" class="userDataInputs"/>
+            </div>
+        
+            <input type="button" id="userDataEnter" value="Sign in"/>
+            <input type="button" id="userDataRegistr" value="Sign up"/>
+        
+          </form>
+        </div>
+        
+      </div>
+      <script src="public/regCon.js"></script>
+      <script src="public/main.js"></script>
+</body>
+</html>

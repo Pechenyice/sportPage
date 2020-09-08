@@ -1,0 +1,427 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/mainSection.css" rel="stylesheet">
+    <link href="css/menuSection.css" rel="stylesheet">
+    <link href="css/rulesSection.css" rel="stylesheet">
+    <link href="css/fixedMenuSection.css" rel="stylesheet">
+    <link href="css/reAdressSection.css" rel="stylesheet">
+    <link href="css/motivationSection.css" rel="stylesheet">
+    <link href="css/gallerySection.css" rel="stylesheet">
+    <link href="css/statisticSection.css" rel="stylesheet">
+    <link href="css/footerSection.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/notification.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display.." rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <div id="techNotification">
+        Просим обратить внимание, что сайт дорабатывается, на данный момент готовы разделы из меню навигации<br/> (программы, комплексы, тренировки, конструктор), а также упражнение на ягодицы
+        <div id="techNotificationClose">x</div>
+        <script lang="javascript">
+            var notificationCloser = document.getElementById('techNotificationClose');
+            notificationCloser.onclick = () => {document.getElementById('techNotification').style.display = 'none';}
+        </script>
+    </div>
+
+    <section id="fixedMenu">
+
+        <a href="/"><div id="fixedMenuForLogo">
+            <div id="fixedMenuLogo"></div>
+            <div id="fixedMenuTextLogo">You-Fitness</div>
+        </div></a>
+
+        <div id="nav">
+            <div class="navElem">
+                <a href="#"><p class="activeLink">Главная</p></a>
+                <div class="navElemUnd"></div>
+            </div>
+
+            <div class="navElem dropDownListBlock">
+                <a href="javascript:0"><p>Спорт</p></a>
+                <div class="navElemUnd"></div>
+            </div>
+
+            <div class="dropDownList">
+                <ul>
+                    <a href="/trains"><li>Тренировки</li></a>
+                    <a href="/programms"><li>Программы</li></a>
+                    <a href="/complexes"><li>Комплексы</li></a>
+                    <a href="/constructor"><li>Конструктор</li></a>
+                </ul>
+            </div>
+
+            <div class="navElem">
+                <a href="/trains"><p>Тренировки</p></a>
+                <div class="navElemUnd"></div>
+            </div>
+            <div class="navElem">
+                <a href="/programms"><p>Программы</p></a>
+                <div class="navElemUnd"></div>
+            </div>
+            <div class="navElem">
+                <a href="/complexes"><p>Комплексы</p></a>
+                <div class="navElemUnd"></div>
+            </div>
+            <div class="navElem">
+                <a href="/constructor"><p>Конструктор</p></a>
+                <div class="navElemUnd"></div>
+            </div>
+            <div class="navElem dropDownListIntBlock">
+                <a href="#"><p>Интересное</p></a>
+                <div class="navElemUnd"></div>
+            </div>
+            <div class="dropDownListInt">
+                    <ul>
+                        <a href="/motivation"><li>Мотивация</li></a>
+                        <a href="/tops"><li>Топ 10</li></a>
+                        <a href="/ourTeam"><li class="activeLink">О нас</li></a>
+                    </ul>
+            </div>
+            <div class="navElem menuOpener"><p><i class="fas fa-bars"></i></p></div>
+        </div>
+    </section>
+
+    <section id="preloader">
+        <div id="preloadContent">
+            <div id="preloadAnimatedContent"><h1 id="preloadLoad">0%</h1></div>
+        </div>
+    </section>
+
+    <section id="absoluteMenu">
+            <div id="absoluteMenuSportBackMain"></div>
+            <div id="absoluteMenuIntrestingBackMain"></div>
+            <div id="absoluteMenuSportBack1"></div>
+            <div id="absoluteMenuSportBack2"></div>
+            <div id="absoluteMenuSportBack3"></div>
+            <div id="absoluteMenuSportBack4"></div>
+            <div id="absoluteMenuIntrestingBack1"></div>
+            <div id="absoluteMenuIntrestingBack2"></div>
+            <div id="absoluteMenuAboutBack"></div>
+            <div id="absoluteMenuToMainBack"></div>
+            <div id="menuCursorUI">* click *</div>
+
+            <div id="menuClose">
+                    <p>✖</p>
+            </div>
+
+            <div id="menuContent">
+                <ul>
+                    <li class="rollMenu"><p>Спорт</p></li>
+                    <div id="rollMenuSport">
+                        <div id="menuBeforer"></div>
+                        <a href="/trains"><li class="firstMenuBeforerLi" id="rollMenuSport1">Тренировки</li></a>
+                        <a href="/programms"><li id="rollMenuSport2">Программы</li></a>
+                        <a href="/complexes"><li id="rollMenuSport3">Комплексы</li></a>
+                        <a href="/constructor"><li id="rollMenuSport4">Конструктор</li></a>
+                    </div>
+                    <li class="rollMenu"><p>Интересное</p></li>
+                    <div id="rollMenuIntresting">
+                        <div id="menuBeforer"></div>
+                        <a href="/motivation"><li class="firstMenuBeforerLi" id="rollMenuIntresting1">Мотивация</li></a>
+                        <a href="/tops"><li id="rollMenuIntresting2">Топ-10</li></a>
+                    </div>
+                    <a href="/ourTeam"><li id="absoluteMenuAbout"><p>О нас</p></li></a>
+                    <a href="/"><li id="absoluteMenuToMain"><p>Главная</p></li></a>
+                </ul>
+            </div>
+    </section>
+
+    <section id="mainSection">
+        <div class="container">
+            <a href="#"><img src="img/mainBack.jpg" alt="" class="parallaxIMG" id="mainBackground"/>
+            <img src="img/logoBear.png" alt="You-fitness" id="PCLogo"/>
+            <div id="logoBox">
+                <div id="logo"></div>
+                <div id="logoBorder"></div>
+                <div id="logoTextBorder"></div>
+                <div id="logoTextBorderAnim"><i class="fas fa-biking"></i></div>
+                <div id="logoText"><p>ness</p></div>
+            </div></a>
+
+            <div id="nav">
+                <div class="navElem">
+                    <a href="/"><p class="activeLink">Главная</p></a>
+                    <div class="navElemUnd"></div>
+                </div>
+
+                <div class="navElem dropDownListBlock">
+                    <a href="javascript:0"><p>Спорт</p></a>
+                    <div class="navElemUnd"></div>
+                </div>
+
+                <div class="dropDownList">
+                    <ul>
+                        <a href="/trains"><li>Тренировки</li></a>
+                        <a href="/programms"><li>Программы</li></a>
+                        <a href="/complexes"><li>Комплексы</li></a>
+                        <a href="/constructor"><li>Конструктор</li></a>
+                    </ul>
+                </div>
+
+                <div class="navElem">
+                    <a href="/trains"><p>Тренировки</p></a>
+                    <div class="navElemUnd"></div>
+                </div>
+                <div class="navElem">
+                    <a href="/programms"><p>Программы</p></a>
+                    <div class="navElemUnd"></div>
+                </div>
+                <div class="navElem">
+                    <a href="/complexes"><p>Комплексы</p></a>
+                    <div class="navElemUnd"></div>
+                </div>
+                <div class="navElem">
+                    <a href="/constructor"><p>Конструктор</p></a>
+                    <div class="navElemUnd"></div>
+                </div>
+                <div class="navElem dropDownListIntBlock">
+                    <a href="#"><p>Интересное</p></a>
+                    <div class="navElemUnd"></div>
+                </div>
+                <div class="dropDownListInt">
+                    <ul>
+                        <a href="/motivation"><li>Мотивация</li></a>
+                        <a href="/tops"><li>Топ 10</li></a>
+                        <a href="/ourTeam"><li class="activeLink">О нас</li></a>
+                    </ul>
+                </div>
+                <div class="navElem menuOpener"><p><i class="fas fa-bars"></i></p></div>
+            </div>
+
+            <div id="strName">
+                <h1 class="parallaxH1">Welcome back to</h1>
+                <h1 class="parallaxH1" id="forLogoStrName">You-fitness</h1>
+                <h1 class="parallaxH1">Glad to see you again</h1>
+            </div>
+
+            <div id="mainScroll"><p><i class="fas fa-angle-down"></i></p></div>
+        </div>
+    </section>
+
+    <section id="rulesSection">
+        <h1 class="headline">Преимущества работы с нами</h1>
+        <div id="rulesGrid">
+            <div class="container">
+                <div class="rulesGridContent">
+                    <div>
+                        <img src="img/logoMoney.png" />
+                    </div>
+                    <div>
+                        <img src="img/logoFood.png" />
+                    </div>
+                    <div>
+                        <img src="img/logoWood.png" />
+                    </div>
+                    <div>
+                        <img src="img/logoAdventure.png" />
+                    </div>
+                    <div>
+                        <img src="img/logoArround.png" />
+                    </div>
+                        <div>
+                            <p>Абсолютно бесплатно</p>
+                        </div>
+                        <div>
+                            <p>Мы можем сесть на диету за вас</p>
+                        </div>
+                        <div>
+                            <p>Сделаете первый шаг</p>
+                        </div>
+                        <div>
+                            <p>Покорите новые вершины</p>
+                        </div>
+                        <div>
+                            <p>Измените свое отношение</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reAdressSection">
+        <div class="container">
+            <h1 class="headline">Чем займемся сегодня?</h1>
+            <a href="javascript:0" id='randomReAdress'><div id="randomReAdressDivBorder"><div id="randomReAdressDiv"><p id="randomReAdressDivText">Выберите за меня</p></div></div></a>
+            <div id="reAdressGrid">
+
+                <div id="firstReAdressGridDiv">
+                    <div class="fake"></div>
+                    <div id="nameReAdress"><p>Тренировки</p></div>
+                    <div id="zigzagReAdress">
+                        <img src="img/zigzag.png" />
+                        <img src="img/zigzag.png" />
+                    </div>
+                    <div id="textReAdress">Наша команда создала упражнения на большинство групп мышц. Настройте свою идеальную тренировку, максимально точно отвечающую вашим целям</div>
+                    <a href="/trains"><div id="buttonReAdress"><p>подобрать тренировку</p></div></a>
+                </div>
+
+                <div id="secondReAdressGridDiv">
+                    <div class="fake"></div>
+                    <div id="nameReAdress"><p>Программы</p></div>
+                    <div id="zigzagReAdress">
+                        <img src="img/zigzag.png" />
+                        <img src="img/zigzag.png" />
+                    </div>
+                    <div id="textReAdress">Уже созданные нашей командой программы помогут вам быстро и удобно выбрать тренировки, подходящие именно вам. Упражнения с возрастающей нагрузкой помогут вам прокачать необходимую группу мышц</div>
+                    <a href="/programms"><div id="buttonReAdress"><p>подобрать программу</p></div></a>
+                </div>
+
+                <div id="thirdReAdressGridDiv">
+                    <div class="fake"></div>
+                    <div id="nameReAdress"><p>Комплексы</p></div>
+                    <div id="zigzagReAdress">
+                        <img src="img/zigzag.png" />
+                        <img src="img/zigzag.png" />
+                    </div>
+                    <div id="textReAdress">Если у вас есть конкретная цель и вы устали искать в интернете подходящие под нее тренировки - эта страница для вас! Похудеть, накачать попу или понравиться девушке - вам помогут комплексы упражнений, заботливо собранные нашей командой</div>
+                    <a href="/complexes"><div id="buttonReAdress"><p>подобрать комплекс</p></div></a>
+                </div>
+
+                <div id="fourthReAdressGridDiv">
+                    <div class="fake"></div>
+                    <div id="nameReAdress"><p>Конструктор</p></div>
+                    <div id="zigzagReAdress">
+                        <img src="img/zigzag.png" />
+                        <img src="img/zigzag.png" />
+                    </div>
+                    <div id="textReAdress">Наш конструктор упражнений позволит вам проложить собственный маршрут. Простая настройка необходимых нагрузок поможет сделать тренировки комфортными и разнообразными. Кто же не любит индивидуальный подход?</div>
+                    <a href="/constructor"><div id="buttonReAdress"><p>создать тренировку</p></div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="motivationSlider">
+        <div class="container">
+            <h1 class="headline">Немного мотивации</h1>
+            <div id="outsideBorderSlider"></div>
+            <div id="insideBorderSlider"></div>
+            <div id="resizeArea">
+                <div id="resizeAreaMain"></div>
+                <div id="resizeAreaAction"></div>
+                <div id="resizeAreaCursor"><p><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></p></div>
+              </div>
+            <h1 class="sliderHeadlines">До</h1>
+            <h1 class="sliderHeadlines">После</h1>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            
+            <h1 class="headline">Интересности</h1>
+
+            <div id="galleryBoxOutsideBorder"></div>
+            <div id="galleryBoxInsideBorder"></div>
+            <div id="galleryBox">
+                    <div id="checkPicPrev"><i class="fas fa-chevron-left"></i></div>
+                    <div id="checkPicNext"><i class="fas fa-chevron-right"></i></div>
+            </div>
+
+            <div id="galleryText">Lorem ipsum <a href="javascript:0">dolor sit amet</a> consectetur adipisicing elit. Quo non eos dolore laboriosam possimus, magnam consectetur, earum sit quasi excepturi soluta dolorum. Ipsum optio deleniti cum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga perferendis saepe ipsum placeat magni sit cupiditate sint perspiciatis, eum voluptatum enim dicta, esse excepturi. Delectus soluta quis eveniet officia laborum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, esse! Non deleniti rerum ratione placeat corporis quas quos ad eligendi, voluptatibus dolorem quod exercitationem obcaecati sapiente ipsam maiores aut sunt? possimus ut quod facilis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum a officia animi aliquid ullam tempora? Numquam suscipit unde asperiores, soluta expedita sint eum explicabo maxime inventore maiores. Veniam, amet atque?</div>
+            <a href="#"><div id="galleryTextReAdress"><p>Узнать больше</p></div></a> 
+
+          <div id="galleryButtons">
+            <div class="checkButtons" id="firstCheckButton"></div>
+            <div class="checkButtons" id="secondCheckButton"></div>
+            <div class="checkButtons" id="thirdCheckButton"></div>
+            <div class="checkButtons" id="fourthCheckButton"></div>
+            <div class="checkButtons" id="fifthCheckButton"></div>
+          </div>
+
+        </div>
+    </section>
+
+    <section id="statistic">
+        <div id="greyStat">
+            <div class="container">
+                <h1 class="headline">Минута статистики</h1>
+                <div id="violetFirstStat"><p>78%</p></div>
+                <div id="orangeSecondStat"><p>15%</p></div>
+                <div id="blueThirdStat"><p>7%</p></div>
+                <p id="violetFirstText">Столько людей бросают тренировки на следующий день после начала упражнений. Это самый сложный период занятий, так как начинается перестройка мышц и организма, а это сопровождается болью и усталостью!</p>
+                <p id="orangeSecondText">Такой процент людей не заканчивают свои программы и сдаются, бросают тренировки, так и не достигнув своей цели!</p>
+                <p id="blueThirdText">Лишь 7% людей проявляют огромную силу воли, достигая поставленной цели, и заканчивают начатое!</p>
+            </div>
+        </div>
+
+        <div id="blueStat"></div>
+    </section>
+
+    <section id="footer">
+        <div class="container">
+            <a href="#"><div id="footerForLogo">
+                <div id="footerTextLogo"></div>
+                <div id="footerLogo"></div>
+            </div></a>
+            <div id="footerNav">
+                <div class="footerNavUl">
+                    <h1> Навигация</h1>
+                    <a href="trains"><p><span><i class="fas fa-dumbbell"></i></span>Тренировки</p></a>
+                    <a href="programms"><p><span><i class="fas fa-clipboard-list"></i></span>Программы</p></a>
+                    <a href="complexes"><p><span><i class="fas fa-calendar-week"></i></span>Комплексы</p></a>
+                    <a href="constructor"><p><span><i class="fas fa-wrench"></i></span>Конструктор</p></a>
+                    <a href="motivation"><p><span><i class="fas fa-brain"></i></span>Мотивация</p></a>
+                    <a href="tops"><p><span><i class="fas fa-chart-pie"></i></span>Топ-10</p></a>
+                    <a href="#"><p class="activeLink"><span><i class="fas fa-home"></i></span>Главная</p></a>
+                </div>
+                <div class="footerNavUl">
+                    <h1>Медиа</h1>
+                    <p><span><i class="fab fa-instagram"></i></span>Instagram</p>
+                    <p><span><i class="fab fa-facebook-f"></i></span>Facebook</p>
+                    <p><span><i class="fab fa-vk"></i></span>Vk</p>
+                    <p><span><i class="fab fa-twitter"></i></span>Twitter</p>
+                </div>
+                <div class="footerNavUl">
+                    <h1>О нас</h1>
+                    <a href="/ourTeam"><p><span id="footerSpanFix1"><i class="fas fa-portrait"></i></span>наша команда</p></a>
+                    <a href="/license"><p><span><i class="fas fa-certificate"></i></span>лицензия</p></a>
+                    <a href="/confidence"><p><span id="footerSpanFix"><i class="fas fa-stamp"></i></span>конфеденциальность</p></a>
+                </div>
+                <div class="footerNavUl">
+                    <h1>Контакты</h1>
+                    <p><span><i class="fas fa-at"></i></span>Mail.ru</p>
+                    <p><span><i class="fab fa-yandex-international"></i></span>yandex.ru</p>
+                </div>
+            </div>
+
+            <div id="footerLinks">
+                <div id="footerLinksActive">
+                    <div class="footerLinksBoxes" id="footerVK"><i class="fab fa-vk"></i></div>
+                    <div class="footerLinksBoxes" id="footerInst"><i class="fab fa-instagram"></i></div>
+                    <div class="footerLinksBoxes" id="footerFB"><i class="fab fa-facebook-f"></i></div>
+                    <div class="footerLinksBoxes" id="footerTwit"><i class="fab fa-twitter"></i></div>
+                    <div class="footerLinksBoxes" id="footerMail"><i class="fas fa-at"></i></div>
+                    <div class="footerLinksBoxes" id="footerYand"><i class="fab fa-yandex-international"></i></div>
+                </div>
+                <div id="footerLinksBorder"></div>
+                <div id="footerLinksProtect">g-fitness ©<br/>made in 2019
+                    <div id="footerBackToTop"><p><i class="fas fa-angle-up"></i></p></div>
+                    <span>Наверх</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script src="js/menu.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/menuUI.js"></script>
+<script src="js/preloader.js"></script>
+<script src="js/reAdress.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/appierenceIndex.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/jallery.js"></script>
+<script src="js/statistic.js"></script>
+<script src="js/randomForUsers.js"></script>
+</html>

@@ -1,0 +1,291 @@
+#reAdressSection {
+    width: 100%;
+    height: 1110px;
+    background-color: #ededed;
+    padding-top: 20px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;        
+}
+
+#reAdressSection .headline{
+    opacity: 0;
+    margin-bottom: 30px;
+}
+
+#randomReAdressDivBorder {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: calc(50% - 50px);
+    left: calc(50% - 100px);
+    border: 2px solid white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    z-index: 1;
+    transition: .5s;
+}
+
+#randomReAdressDiv {
+    width: 190px;
+    height: 190px;
+    background: #7CACE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    z-index: 1;
+    transition: .5s;
+}
+
+#randomReAdressDivBorder:hover {
+    width: 220px;
+    height: 220px;
+    top: calc(50% - 60px);
+    left: calc(50% - 110px);
+    transition: .5s;
+    box-shadow: 0 0 10px white;
+}
+
+#randomReAdressDivBorder:hover #randomReAdressDiv {
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(#BA55D3, #FF9E6A);
+    animation-name: preloading;
+    animation-delay: .4s;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    transition: .5s;
+}
+
+#randomReAdressDivText {
+    transform: rotateZ(360deg);
+    transition: .5s;
+}
+
+#randomReAdressDivBorder:hover #randomReAdressDivText {
+    animation-name: repreloading;
+    animation-delay: .4s;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+#reAdressGrid {
+    position: relative;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px 500px;
+}
+
+#reAdressGrid div{
+    position: relative;
+}
+
+#reAdressGrid #firstReAdressGridDiv{
+    background: url(../img/ass.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: 1s;
+}
+#reAdressGrid #secondReAdressGridDiv{
+    background: url(../img/ass3.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: 1s;
+}
+#reAdressGrid #thirdReAdressGridDiv{
+    background: url(../img/shoulders2.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: 1s;
+}
+#reAdressGrid #fourthReAdressGridDiv{
+    background: url(../img/breast.jpg);
+    background-size: cover;
+    opacity: 0;
+    transition: 1s;
+}
+
+#reAdressGrid div div.fake {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,.7);
+    transition: .5s;
+}
+
+#reAdressGrid div:hover div.fake {
+    transition: .5s;
+}
+
+#reAdressGrid div div#buttonReAdress {
+    border: 1px white solid;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 15px;
+    width: 35%;
+    height: 13%;
+    bottom: 20px;
+    left: 32.5%;
+    background: none;
+    transition: .5s;
+}
+
+#reAdressGrid div:hover div#buttonReAdress {
+    color: black;
+    background-color: #fff;
+    box-shadow: 0 0 25px rgba(255,255,255,.5);
+}
+
+#reAdressGrid div:hover div#buttonReAdress:hover {
+    border: none;
+    color: white;
+    background-color: rgb(106, 90, 205);
+    box-shadow: 0 0 25px rgba(106, 90, 205,1);
+}
+
+#reAdressGrid div div#nameReAdress {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4em;
+    color: white;
+    left: 25%;
+    top: 40%;
+    width: 50%;
+    height: 20%;
+    background: none;
+    transition: .5s;
+    transition-delay: .5s;
+}
+
+#reAdressGrid div:hover div#nameReAdress {
+    top: 5%;
+    transition: .5s;
+}
+
+#reAdressGrid div div#zigzagReAdress {
+    background: none;
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    top: 27%;
+    width: 50%;
+    height: 5%;
+    opacity: 0;
+    transition: .5s;
+}
+
+#reAdressGrid div:hover div#zigzagReAdress {
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: 5%;
+    transition: .5s;
+    transition-delay: .6s;
+    opacity: 1;
+}
+
+#reAdressGrid div div#zigzagReAdress img{
+    width: 30%;
+}
+#reAdressGrid div div#zigzagReAdress img:nth-child(1){
+    float: left;
+    clear: right;
+}
+#reAdressGrid div div#zigzagReAdress img:nth-child(2){
+    float: right;
+}
+
+#reAdressGrid div div#textReAdress {
+    background: none;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4em;
+    color: white;
+    width: 50%;
+    height: 40%;
+    left: 25%;
+    top: 34%;
+    transition: .5s;
+    opacity: 0;
+}
+
+#reAdressGrid div:hover div#textReAdress {
+    transition: .5s;
+    transition-delay: 1.2s;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #reAdressSection .headline {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    #reAdressGrid div div#buttonReAdress {
+        font-size: 1.2em;
+        width: 50%;
+        left: 25%;
+    }
+
+    #reAdressGrid div div#textReAdress {
+        width: 70%;
+        left: 15%;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #randomReAdressDivBorder {
+        display: none;
+    }
+
+    #reAdressSection {
+        height: 2110px;  
+    }
+
+    #reAdressGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 500px 500px 500px;
+    }
+
+    #reAdressGrid div div#buttonReAdress {
+        font-size: 1.5em;
+        width: 50%;
+        left: 25%;
+    }
+
+    #reAdressGrid div div#textReAdress {
+        width: 70%;
+        left: 15%;
+        font-size: 1.5em;
+    }
+}

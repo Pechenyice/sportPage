@@ -1,0 +1,696 @@
+#exerciseDiv {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: max-content;
+    overflow: visible;
+    background-color: #272727;
+}
+
+#exerciseDiv .container {
+    height: 2230px;
+    max-height: 2230px;
+}
+
+.grid-container #absoluteTrainsBack {
+    position: absolute;
+    top: 24%;
+    left: 25%;
+    z-index: 0;
+    width: 50%;
+    height: 52%;
+    background: url(../../img/forTrains/trainsSecret.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#exercizeFilter {
+    overflow: visible;
+    float: left;
+    clear: right;
+    width: calc(25% - 80px);
+    height: 86vh;
+    min-height: 650px;
+    max-height: 2180px;
+    background-color: #7CACE1;
+    position: sticky;
+    top: 80px;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#exercizeFilter h1 {
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+}
+
+#exercizeFilter h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1em;
+    letter-spacing: 2px;
+    color: white;
+}
+
+/*                              buttons                          */
+
+#exercizeFilter #scrollButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    background-color: #7CACE1;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    top: 45vh;
+    right: -15px;
+}
+
+.filterButtons {
+    display: flex;
+    position: relative;
+    width: 80%;
+    height: 50px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    margin: 0 auto;
+    background-color: #6898CD;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.filterButtons p{
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+
+#eighthButton p{
+    color: #6898CD;
+}
+
+.filterButtons#firstButton {
+    margin-top: 20px;
+    margin-bottom: 40px; 
+    background-color: #fff;
+    color: #6898CD;
+}
+
+.filterButtons#eighthButton {
+    margin-top: 60px;
+    background-color: #fff;
+    color: #6898CD;
+}
+
+.buttonHover {
+    width: 100%;
+    height: 50px;
+    background-color: #FF9E6A;
+    color: white;
+    transition: .5s;
+}
+
+.buttonHover h2{
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 2em;
+    transition: .2s;
+    transform: rotate(45deg);
+}
+
+#firstButton:hover .buttonHover{
+    transition: .5s;
+}
+
+#firstButton:hover .buttonHover h2{
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+#secondButton:hover #secondButtonHover{
+    transition: .5s;
+}
+
+#secondButton:hover #secondButtonHover h2{
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+#thirdButton:hover #thirdButtonHover{
+    transition: .5s;
+}
+
+#thirdButton:hover #thirdButtonHover h2{
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+#fourthButton:hover #fourthButtonHover{
+    transition: .5s;
+}
+
+#fourthButton:hover #fourthButtonHover h2{
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+#fifthButton:hover #fifthButtonHover{
+    transition: .5s;
+}
+
+#fifthButton:hover #fifthButtonHover h2{
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+#sixthButton:hover #sixthButtonHover{
+    transition: .5s;
+}
+
+#sixthButton:hover #sixthButtonHover h2{
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+#seventhButton:hover #seventhButtonHover{
+    transition: .5s;
+}
+
+#seventhButton:hover #seventhButtonHover h2{
+    transition: .5s;
+    transition-delay: .3s;
+}
+
+
+
+/*                               grid                             */
+
+.grid-container {
+    position: relative;
+    z-index: 1;
+    float: right;
+    padding: 20px;
+    background-color: #272727;
+    width: calc(75% + 40px);
+    height: 2140px;
+    display: grid;  
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 245px;
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    margin-right: 20px;
+    margin-top: 70px;
+    padding-bottom: 0;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.grided {
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grided h1 {
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    top: calc(50% - 50px);
+    transition: .5s;
+}
+
+.grided img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container div:nth-child(1) h1 {
+    font-size: 3em;
+}
+
+.grid-container div:nth-child(8) h1 {
+    font-size: 3em;
+}
+
+.grid-container div:nth-child(13) h1 {
+    font-size: 3em;
+}
+
+
+
+.grid-container div:nth-child(1) {
+    grid-column: span 8;
+    grid-row: span 2;
+}
+.grid-container div:nth-child(2) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(3) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(4) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(5) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(6) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(7) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(8) {
+    grid-column: span 8;
+    grid-row: span 2;
+}
+.grid-container div:nth-child(9) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(10) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(11) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(12) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(13) {
+    grid-column: span 8;
+    grid-row: span 2;
+}
+.grid-container div:nth-child(14) {
+    grid-column: span 4;
+}
+.grid-container div:nth-child(15) {
+    grid-column: span 4;
+}
+
+.grid-container div:nth-child(1) div.zigzagTrains {
+    top: 22%;
+}
+
+.grid-container div:nth-child(8) div.zigzagTrains {
+    top: 22%;
+}
+
+.grid-container div:nth-child(13) div.zigzagTrains {
+    top: 22%;
+}
+
+div.fake {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0,.7);
+    transition: .5s;
+}
+
+.grided:hover div.fake {
+    opacity: 1;
+    transition: .5s;
+}
+
+.grided:hover h1 {
+    top: -3%;
+}
+
+.grided div.zigzagTrains {
+    background: none;
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    top: 30%;
+    width: 50%;
+    height: 2%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.grided:hover div.zigzagTrains {
+    transition: .3s;
+    transition-delay: .4s;
+    opacity: 1;
+}
+
+div.zigzagTrains img{
+    width: 30%;
+    position: absolute;
+}
+
+div.zigzagTrains img:nth-child(1){
+    position: absolute;
+    left: 0;
+}
+
+div.zigzagTrains img:nth-child(2){
+    position: absolute;
+    left: 70%;
+}
+
+.trainButton {
+    position: absolute;
+    bottom: 5%;
+    left: 20%;
+    width: 60%;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: .5s;
+}
+
+.grid-container div:nth-child(1) .trainButton {
+    height: 80px;
+    border-radius: 15px;
+    font-size: 1.8em;
+}
+
+.grid-container div:nth-child(8) .trainButton {
+    height: 80px;
+    border-radius: 15px;
+    font-size: 1.8em;
+}
+
+.grid-container div:nth-child(13) .trainButton {
+    height: 80px;
+    border-radius: 15px;
+    font-size: 1.8em;
+}
+
+.grided:hover .trainButton {
+    opacity: 1;
+    transition: .5s;
+}
+
+.grided:hover .trainButton:hover {
+    background-color: #fff;
+    color: black;
+    transition: .5s;
+}
+
+.grid-container div:nth-child(1) .trainButton span {
+    right: 15%;
+    font-size: .7em;
+    padding-top: 4px;
+}
+
+.grid-container div:nth-child(8) .trainButton span {
+    right: 15%;
+    font-size: .7em;
+    padding-top: 4px;
+}
+
+.grid-container div:nth-child(13) .trainButton span{
+    right: 15%;
+    font-size: .7em;
+    padding-top: 4px;
+}
+
+.grid-container div:nth-child(1) .trainButton:hover span {
+    right: 10%;
+}
+
+.grid-container div:nth-child(8) .trainButton:hover span {
+    right: 10%;
+}
+
+.grid-container div:nth-child(13) .trainButton:hover span{
+    right: 10%;
+}
+
+.grided:hover .trainButton:hover span{
+    position: absolute;
+    right: 5%;
+    transition: .5s;
+    transition-property: right;
+}
+
+.trainButton span{
+    position: absolute;
+    right: 9%;
+    font-size: .5em;
+    transition: .5s;
+    transition-property: right;
+}
+
+.grided a {
+    width: 100%;
+    height: 100%;
+}
+
+.noDisplay {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    #exerciseDiv .container {
+        height: 1890px;
+        max-height: 1890px;
+    }
+
+    .grid-container {
+        height: 1780px;
+        grid-auto-rows: 200px;
+    }
+
+    .grid-container #absoluteTrainsBack {
+        position: absolute;
+        top:30%;
+        left: 25%;
+        z-index: 0;
+        width: 50%;
+        height: 40%;
+        background: url(../../img/forTrains/trainsSecret.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+
+    #exerciseDiv .container {
+        height: 1570px;
+        max-height: 1570px;
+    }
+
+    .grid-container {
+        height: 1460px;
+        grid-auto-rows: 160px;
+    }
+
+    .filterButtons {
+        width: 70%;
+        font-size: 1.2em;
+    }
+
+    .filterButtons p{
+        padding-top: 7px;
+    }
+
+    .buttonHover h2{
+        display: none;
+    }
+
+    .trainButton {
+        font-size: 1em;
+    }
+    
+    .grid-container div:nth-child(1) .trainButton {
+        height: 80px;
+        border-radius: 15px;
+        font-size: 1.8em;
+    }
+    
+    .grid-container div:nth-child(8) .trainButton {
+        height: 80px;
+        border-radius: 15px;
+        font-size: 1.8em;
+    }
+    
+    .grid-container div:nth-child(13) .trainButton {
+        height: 80px;
+        border-radius: 15px;
+        font-size: 1.8em;
+    }
+
+    .trainButton span{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #exerciseDiv .container {
+        height: 1900px;
+        max-height: 1900px;
+    }
+
+    .grid-container {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        grid-auto-rows: 100px;
+        grid-gap: 15px;
+    }
+
+    .grid-container div:nth-child(1) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(2) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(3) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(4) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(5) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(6) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(7) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(8) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(9) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(10) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(11) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(12) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(13) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(14) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+    .grid-container div:nth-child(15) {
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+
+    .grid-container div:nth-child(1) .trainButton {
+        height: 50px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+    
+    .grid-container div:nth-child(8) .trainButton {
+        height: 50px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+    
+    .grid-container div:nth-child(13) .trainButton {
+        height: 50px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    .grid-container div:nth-child(1) h1 {
+        font-size: 2em;
+    }
+    
+    .grid-container div:nth-child(8) h1 {
+        font-size: 2em;
+    }
+    
+    .grid-container div:nth-child(13) h1 {
+        font-size: 2em;
+    }
+
+    #exercizeFilter {
+        display: none;
+    }
+
+    .noDisplay {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #exerciseDiv .container {
+        height: 1500px;
+        max-height: 1500px;
+    }
+
+    .grid-container {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        grid-auto-rows: 80px;
+        grid-gap: 10px;
+    }
+
+}

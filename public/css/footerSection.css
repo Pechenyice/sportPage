@@ -1,0 +1,559 @@
+#footer {
+    height: 450px;
+    background-color: #000;
+    width: 100%;
+    position: relative;
+}
+
+#footerForLogo {
+    position: absolute;
+    width: 24%;
+    min-width: 370px;
+    height: max-content;
+    top: 80px;
+    left: 5%;
+}
+
+#footerForLogo:hover #footerLogo {
+    background: url(../img/logoBearActive.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .2s;
+}
+
+#footerForLogo:hover #footerTextLogo {
+    background: url(../img/logoActive.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: logoAnim;
+    animation-delay: .2s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: .2s;
+}
+
+#footerLogo {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 100px;
+    height: 90px;
+    background: url(../img/logoBear.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateZ(-3deg);
+    transition: .2s;
+}
+
+#footerTextLogo {
+    width: 100%;
+    height: 80px;
+    background: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateZ(-5deg);
+    transition: .2s;
+}
+
+#footerTextLogo:hover {
+    background: url(../img/logoActive.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: logoAnim;
+    animation-delay: .2s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: .2s;
+}
+
+#footerNav {
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    top: 30px;
+    right: 5%;
+}
+
+.footerNavUl {
+    width: 20%;
+    height: 100%;
+    position: absolute;
+}
+
+.footerNavUl:hover h1 {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+}
+
+.footerNavUl:nth-child(1) {
+    left: 4%;
+}
+
+.footerNavUl:nth-child(2) {
+    left: 28%;
+}
+
+.footerNavUl:nth-child(3) {
+    left: 52%;
+}
+
+.footerNavUl:nth-child(4) {
+    left: 76%;
+}
+
+.footerNavUl h1{
+    margin: 0;
+    margin-bottom: 10%; 
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.4em;
+    transition: .3s;
+}
+
+.footerNavUl p{
+    margin: 0;
+    line-height: 1.5em;
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.3em;
+    transition: .3s;
+    position: relative;
+}
+
+#footerSpanFix {
+    left: -20%;
+}
+
+#footerSpanFix1 {
+    left: -5%;
+}
+
+.footerNavUl p span{
+    position: absolute;
+    left: 0%;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    text-shadow: 0 0 70px #fff, 0 0 10px #fff;
+    opacity: 0;
+    transition: .3s;
+}
+
+.footerNavUl p:hover span{
+    transition: .3s;
+    opacity: 1;
+}
+
+.footerNavUl p:hover{
+    text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+    transition: .3s;
+}
+
+#footerLinks {
+    position: absolute;
+    width: 50%;
+    height: 70px;
+    top: 350px;
+    left: 25%;
+}
+
+#footerLinksActive {
+    position: absolute; 
+    top: 20%;
+    left: 4.875%;
+    width: 290px;
+    height: 60%;
+}
+
+#footerLinksBorder {
+    position: absolute;
+    left: 350px;
+    width: 0.5%;
+    border-radius: 10%;
+    height: 80%;
+    top: 10%;
+    background-color: #fff;
+}
+
+#footerLinksProtect {
+    position: absolute;
+    left: 380px;
+    width: 40%;
+    height: 100%;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.2em;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#footerBackToTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1em;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: 100px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#footerBackToTop:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px #fff;
+    transition: .3s;
+}
+
+#footerBackToTop:hover ~ span {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    transition: .3s;
+}
+
+#footerLinksProtect span{
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1em;
+    position: absolute;
+    left: 170px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.footerLinksBoxes {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+}
+
+.footerLinksBoxes:hover {
+    box-shadow: 0 0 10px white;
+    text-shadow: 0 0 10px white, 0 0 20px white;
+    transition: .2s;
+}
+
+#footerVK {
+    margin-left: 0px;
+}
+
+#footerInst {
+    margin-top: -40px;
+    margin-left: 50px;
+}
+
+#footerFB {
+    margin-top: -40px;
+    margin-left: 100px;
+}
+
+#footerTwit {
+    margin-top: -40px;
+    margin-left: 150px;
+}
+
+#footerMail {
+    margin-top: -40px;
+    margin-left: 200px;
+}
+
+#footerYand {
+    margin-top: -40px;
+    margin-left: 250px;
+}
+
+#footerFB:hover {
+    /* border: 1px solid rgb(55, 100, 245);
+    background-color: rgb(55, 100, 245);
+    box-shadow: 0 0 25px rgb(55, 100, 245);
+    text-shadow: 0 0 10px white, 0 0 20px white; */
+
+    color: rgb(55, 100, 245);
+    border: 1px solid rgb(55, 100, 245);
+    box-shadow: 0 0 10px rgb(55, 100, 245);
+    text-shadow: 0 0 10px rgb(55, 100, 245), 0 0 20px rgb(55, 100, 245);
+}
+
+#footerInst:hover {
+    color: rgb(255, 62, 181);
+    border: 1px solid rgb(255, 62, 181);
+    box-shadow: 0 0 10px rgb(255, 62, 181);
+    text-shadow: 0 0 10px rgb(255, 62, 181), 0 0 20px rgb(255, 62, 181);
+}
+
+#footerVk:hover {
+    color: rgb(40, 118, 207);
+    border: 1px solid rgb(40, 118, 207);
+    box-shadow: 0 0 10px rgb(40, 118, 207);
+    text-shadow: 0 0 10px rgb(40, 118, 207), 0 0 20px rgb(40, 118, 207);
+}
+
+#footerTwit:hover {
+    color: #1DA1F2;
+    border: 1px solid #1DA1F2;
+    box-shadow: 0 0 10px #1DA1F2;
+    text-shadow: 0 0 10px #1DA1F2, 0 0 20px #1DA1F2;
+}
+
+#footerYand:hover {
+    color: rgb(242, 29, 29);
+    border: 1px solid rgb(242, 29, 29);
+    box-shadow: 0 0 10px rgb(242, 29, 29);
+    text-shadow: 0 0 10px rgb(242, 29, 29), 0 0 10px rgb(242, 29, 29);
+}
+
+.footerNavUl p.activeLink span{
+    transition: .3s;
+    opacity: 1;
+}
+
+@keyframes logoAnim {
+    0% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    14% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    15% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    19% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    20% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    26% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    27% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    29% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    30% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    35% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    36% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    35% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    45% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    46% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    49% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    56% {
+        background: url(../img/logoPreActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    57% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background: url(../img/logoActive.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #footerLinks {
+        width: 70%;
+        left: 20%;
+    }
+
+    .footerNavUl:nth-child(1) {
+        left: 22%;
+    }
+
+    .footerNavUl:nth-child(2) {
+        display: none;
+    }
+    
+    .footerNavUl:nth-child(3) {
+        left: 56%;
+    }
+    
+    .footerNavUl:nth-child(4) {
+        display: none;
+    }
+    
+    .footerNavUl h1{
+        width: 150%;
+    }
+
+    .footerNavUl p{
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .footerNavUl:nth-child(1) {
+        left: 32%;
+    }
+    
+    .footerNavUl:nth-child(3) {
+        left: 66%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #footerLinksBorder {
+        display: none;
+    }
+
+    #footerLinksProtect {
+        display: none;
+    }
+
+    #footerLinks #footerLinksActive {
+        left: calc(50% - 145px);
+    }
+
+    #footerLinks {
+        width: 80%;
+        left: 10%;
+    }
+
+    #footerForLogo {
+        min-width: 80px;
+        width: max-content;
+        height: max-content;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+    }
+
+    #footerTextLogo {
+        display: none;
+    }
+
+    #footerLogo {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 90px;
+        background: url(../img/logoBear.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotateZ(-3deg);
+        transition: .2s;
+    }
+
+    .footerNavUl:nth-child(1) {
+        left: -10%;
+    }
+    
+    .footerNavUl:nth-child(3) {
+        left: 45%;
+    }
+
+    .footerNavUl p{
+        width: 300%;
+    }
+
+    .footerNavUl h1{
+        width: 300%;
+    }
+
+    #footerSpanFix {
+        left: -15%;
+    }
+}

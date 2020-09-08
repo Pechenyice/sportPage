@@ -1,0 +1,239 @@
+#absoluteMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: max-content;
+    background-color: #7CACE1;
+    z-index: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+#menuClose {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px white solid;
+    transition: .5s;
+}
+
+#menuClose:hover {
+    box-shadow: 0 0 15px white;
+    text-shadow: 0 0 10px white, 0 0 15px white;
+    transition: .5s;
+}
+
+#menuContent {
+    width: 30%;
+    min-height: 400px;
+    position: relative;
+}
+
+#menuContent ul{
+    list-style: none;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 3em;
+    letter-spacing: 1px; 
+    margin: 0;
+    padding: 0;
+}
+
+#menuContent ul li{
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    z-index: 1;
+}
+
+#menuContent ul li p{
+    margin: 0 auto;
+    padding: 0;
+    line-height: 100px;
+    width: max-content;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+
+#menuContent ul div{
+    height: 0px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+#rollMenuSport {
+    position: relative;
+    overflow: hidden;
+}
+
+#rollMenuIntresting {
+    position: relative;
+    overflow: hidden;
+}
+
+#menuContent ul #menuBeforer {
+    position: absolute;
+    top: -10px;
+    left: calc(50% - 10px);
+    border: 10px solid transparent;
+    border-bottom: 10px solid white;
+}
+
+#menuContent ul div li{
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 0.6em;
+    transition: .5s;
+}
+
+#menuContent ul div li.firstMenuBeforerLi {
+    margin-top: 10px;
+}
+
+#menuCursorUI {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.4em;
+    opacity: 0;
+}
+
+#absoluteMenuSportBackMain {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: rgb(28, 143, 124);
+    transition-timing-function: linear;
+}
+
+#absoluteMenuIntrestingBackMain {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #4682b4;
+    transition-timing-function: linear;
+}
+
+#absoluteMenuAboutBack {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #F15C7F;
+    transition-timing-function: linear;
+}
+
+#absoluteMenuToMainBack {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #8a5a92;
+    transition-timing-function: linear;
+}
+
+#absoluteMenuSportBack1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #56b28e;
+    transition-timing-function: linear;
+}
+
+#absoluteMenuSportBack2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #66b2ba;
+    transition-timing-function: linear;
+}
+
+#absoluteMenuSportBack3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #16baa6;
+    transition-timing-function: linear;
+}
+
+#absoluteMenuSportBack4 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #ff927a;
+    transition-timing-function: linear;
+}
+
+#absoluteMenuIntrestingBack1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #FE534C;
+    transition-timing-function: linear;
+}
+
+#absoluteMenuIntrestingBack2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%; 
+    background-color: #92ca6e;
+    transition-timing-function: linear;
+}
+
+@media screen and (max-width: 767px) {
+
+    #menuContent {
+        width: 40%;
+    }
+
+    #menuContent ul div li{
+        width: 100%;
+    }
+}

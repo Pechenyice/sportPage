@@ -1,0 +1,96 @@
+#programmsName {
+    width: 100%;
+    height: 700px;
+    background-color: #ededed;
+    /* background-color: rgb(39, 39, 39); */
+}
+
+#programmsName .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#programmsName .container h1 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 9em;
+    color: #272727;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ededed;
+    z-index: 1;
+}
+
+#programmsName .container p {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 6em;
+    color: #272727;
+    /* color: rgb(237, 237, 237); */
+    text-shadow: 10px 10px 15px #474747;
+}
+
+#firstParallaxP {
+    left: 100px;
+    top: 50px;
+}
+
+#secondParallaxP {
+    left: 200px;
+    top: 400px;
+}
+
+#thirdParallaxP {
+    left: 35%;
+    top: -50px;
+}
+
+#fourthParallaxP {
+    left: 55%;
+    top: 450px;
+}
+
+#fifthParallaxP {
+    right: 100px;
+    top: 25px;
+}
+
+#sixthParallaxP {
+    right: 200px;
+    top: 350px;
+}
+
+@media screen and (max-width: 1050px) {
+    #programmsName .container h1 {
+        font-size: 6em;
+    }
+
+    #programmsName .container p {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #programmsName .container h1 {
+        font-size: 4em;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    #programmsName .container p {
+        font-size: 3em;
+    }
+
+    #secondParallaxP {
+        left: 100px;
+    }
+
+    #thirdParallaxP {
+        top: 120px;
+    }
+
+    #sixthParallaxP {
+        right: 50px;
+        top: 400px;
+    }
+}

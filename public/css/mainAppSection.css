@@ -1,0 +1,123 @@
+body {
+    background-color: #272727;
+}
+
+#mainApp {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-color: #272727;
+    margin-bottom: 30px;
+}
+
+#mainAppHeadline {
+    opacity: 1;
+    color: white;
+    padding-top: 20px;
+}
+
+#mainAppDescription {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    right: 275px;
+    top: calc(50% - 175px);
+}
+
+#mainAppImage {
+    position: absolute;
+    left: 275px;
+    top: calc(50% - 250px);
+    height: 500px;
+}
+
+#mainAppPrevTask, #mainAppNextTask {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+#mainAppPrevTask:hover, #mainAppNextTask:hover {
+    transition: .5s;
+    cursor: pointer;
+}
+
+#mainAppPrevTask {
+    top: calc(50% - 20px);
+    left: 20px;
+    border: 1px solid rgba(255,255,255,1);
+    color: rgba(255,255,255,1);
+}
+
+#mainAppNextTask {
+    top: calc(50% - 20px);
+    right: 20px;
+}
+
+#mainAppUserTask, #mainAppUserTaskContent, #mainAppHelpNextTask, #mainAppPauseTask {
+    position: absolute;
+    height: 80px;
+    border: 1px solid white;
+    border-radius: 25px;
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+#mainAppUserTask {
+    width: 300px;
+    left: 25px;
+    bottom: 20px;
+}
+
+#mainAppUserTaskContent {
+    width: 200px;
+    left: 350px;
+    bottom: 20px;
+    text-shadow: 0 0 10px white, 0 0 10px white;
+}
+
+#mainAppHelpNextTask {
+    width: 500px;
+    right: 150px;
+    bottom: 20px;
+}
+
+#mainAppPauseTask {
+    width: 100px;
+    right: 25px;
+    bottom: 20px;
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+#mainAppPauseTask:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#mainAppContent {
+    transition: .3s;
+}
